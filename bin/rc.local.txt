@@ -1,0 +1,4 @@
+添加自动启动:
+1. sudo vim /etc/rc.local
+2. 添加一下内容并保存({绝对路径} 替换为具体路径)
+{绝对路径}/msg_plus/bin/startup.sh&

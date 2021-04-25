@@ -1,0 +1,42 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection) or
+# paste cURL into the file and request will be converted to HTTP Request format.
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+GET http://127.0.0.1:5000/gettoken?appkey=dingjdpld&appsecret=SRH6Y_UIlCLTik3opo2pBjREjpg
+
+###
+POST http://127.0.0.1:5000/message/send_to_conversation?access_token=123
+Content-Type: application/json
+
+{
+   "sender":"045401002324522813",
+   "cid":"7b6134be925035f98b99dc60dd880170",
+   "msg":{
+      "msgtype":"text",
+      "text":{
+         "content":"Remote9月运动会通知"
+      }
+   }
+}
+
+###
+
+POST http://127.0.0.1:5000/message/send_to_conversation
+Content-Type: application/json
+
+{
+   "sender":"045401002324522813",
+   "cid":"031864616275382b9d7467c38fd349e7",
+   "msg":{
+      "msgtype":"text",
+      "text":{
+         "content":"Remote9月运动会通知"
+      }
+   }
+}
+
+###
